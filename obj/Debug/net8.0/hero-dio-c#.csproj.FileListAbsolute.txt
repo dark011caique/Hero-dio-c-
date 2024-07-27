@@ -1,0 +1,14 @@
+c:\Users\Win10\source\repos\hero-dio-c#\bin\Debug\net8.0\hero-dio-c#.exe
+C:\Users\Win10\source\repos\hero-dio-c#\bin\Debug\net8.0\hero-dio-c#.deps.json
+C:\Users\Win10\source\repos\hero-dio-c#\bin\Debug\net8.0\hero-dio-c#.runtimeconfig.json
+c:\Users\Win10\source\repos\hero-dio-c#\bin\Debug\net8.0\hero-dio-c#.dll
+c:\Users\Win10\source\repos\hero-dio-c#\bin\Debug\net8.0\hero-dio-c#.pdb
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.AssemblyInfoInputs.cache
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.AssemblyInfo.cs
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.csproj.CoreCompileInputs.cache
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.dll
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\refint\hero-dio-c#.dll
+c:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.pdb
+C:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\hero-dio-c#.genruntimeconfig.cache
+C:\Users\Win10\source\repos\hero-dio-c#\obj\Debug\net8.0\ref\hero-dio-c#.dll
