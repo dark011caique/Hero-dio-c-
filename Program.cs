@@ -1,8 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 using hero_dio_c_.src.Entities;
+using hero_dio_c_.src.Class;
 
 class Program
 {
+    static Dictionary<string, List<int>> registraHero = new Dictionary<string, List<int>>
+    {
+        { "Arus", new List<int> { 10 } },
+        { "Jennica", new List<int>() },
+        { "Wedge", new List<int>() },
+        { "Topapa", new List<int>() }
+    };
+
     static void Main()
     {
         while (true)
@@ -29,7 +40,7 @@ class Program
     {
         ExibirLogo();
         Console.WriteLine("\nDigite 1 para Escolher uma classe de herói");
-        Console.WriteLine("Digite 2 para registrar o álbum de uma banda");
+        Console.WriteLine("Digite 2 para Mostrar todos os Heróis");
         Console.WriteLine("Digite 3 para mostrar todas as bandas");
         Console.WriteLine("Digite 4 para avaliar uma banda");
         Console.WriteLine("Digite 5 para exibir os detalhes de uma banda");
@@ -39,13 +50,16 @@ class Program
         string opcaoEscolhida = Console.ReadLine()!;
         int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
 
+        HeroClassSelector heroClassSelector = new HeroClassSelector(registraHero);
+        HeroDisplay heroDisplay = new HeroDisplay(registraHero);
+
         switch (opcaoEscolhidaNumerica)
         {
             case 1:
-                EscolherClasseHeroi();
+                heroClassSelector.EscolherClasseHeroi();
                 break;
             case 2:
-                Console.WriteLine("Registrar o álbum de uma banda");
+                heroDisplay.MostrarHerois();
                 break;
             case 3:
                 Console.WriteLine("Mostrar todas as bandas");
@@ -65,52 +79,4 @@ class Program
                 break;
         }
     }
-
-    static void EscolherClasseHeroi()
-    {
-        Console.Clear();
-        Console.WriteLine("1. Guerreiro");
-        Console.WriteLine("2. Ninja");
-        Console.WriteLine("3. Mago");
-        Console.Write("\nDigite a sua opção: ");
-        string classHero = Console.ReadLine()!;
-        int classHeroType = int.Parse(classHero);
-        Console.Clear();
-        switch (classHeroType)
-        {
-            case 1:
-                Console.WriteLine("Você escolheu Guerreiro");
-                break;
-            case 2:
-                Console.WriteLine("Você escolheu Ninja");
-                break;
-            case 3:
-                Console.WriteLine("Você escolheu Mago");
-                    Console.Clear();
-                        Console.WriteLine("1. White Wizard");
-                        Console.WriteLine("2. Bleack Wizard");
-                        Console.Write("\nDigite a sua opção: ");
-                        string mago = Console.ReadLine()!;
-                        int magoType = int.Parse(mago);
-                        switch(magoType){
-                            case 1:
-                                Console.WriteLine("Você escolheu Mago White");
-                            break;
-
-                            case 2:
-                                Console.WriteLine("Você escolheu Mago Bleack");
-                            break;
-                        }
-                break;
-            default:
-                Console.WriteLine("Opção inválida");
-                break;
-        }
-        Thread.Sleep(10000);
-        Console.Clear();
-        ExibirOpcoesDoMenu();
-    }
 }
-
-
-
