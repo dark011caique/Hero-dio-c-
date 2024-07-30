@@ -23,14 +23,25 @@ namespace hero_dio_c_.src.Entities
         public string Hp { get; set; }
         public string Mp{ get; set; }
 
+        public virtual void Detalhes()
+    {
+        Console.WriteLine($"Nome: {Name}");
+        Console.WriteLine($"Nível: {Level}");
+        Console.WriteLine($"Tipo: {HeroType}");
+        Console.WriteLine($"HP: {Hp}");
+        Console.WriteLine($"MP: {Mp}");
+    }
         public override string ToString()
         {
             return $"Name:{this.Name}, Lvel:{this.Level}, Type:{this.HeroType}, HP:{this.Hp}, mp:{this.Mp}";
         }
 
+
         public virtual string Attack(){
             return $"{this.Name}, Atacou usando espada";
         }
+
+        
 
         
     }

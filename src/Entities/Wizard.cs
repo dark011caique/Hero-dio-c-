@@ -31,5 +31,21 @@ namespace hero_dio_c_.src.Entities
             }
             
         }
+
+        public override void Detalhes()
+    {
+        base.Detalhes(); // Exibe detalhes da classe base
+        // Adiciona detalhes específicos do Wizard
+        if (Name == "Jennica")
+        {
+            Console.WriteLine("História: Jennica é uma maga poderosa conhecida por suas habilidades em magia branca. Ela usa seu conhecimento para curar e proteger seus aliados.");
+            Console.WriteLine("\nHabilidade Especial: Cura Divina - Pode restaurar HP de um aliado em 50%.");
+        }
+        else if (Name == "Topapa")
+        {
+            Console.WriteLine("História: Topapa é um mestre das artes negras, utilizando magia negra para infligir grandes danos aos inimigos.");
+            Console.WriteLine("\nHabilidade Especial: Explosão das Trevas - Lança uma poderosa explosão mágica que causa grandes danos ao inimigo.");
+        }
+    }
     }
 }
